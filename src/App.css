@@ -1,0 +1,441 @@
+/* General Container */
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading Style */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Style */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add Task Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* No Tasks Available */
+.no-tasks {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Task List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #F4F4F4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #e9ecef;
+}
+
+/* Edit Task Input */
+input.edit-task {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Save Button */
+button.save {
+  padding: 5px 10px;
+  background: #28A745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.save:hover {
+  background: #218838;
+}
+
+/* Task Text */
+span.task-text {
+  cursor: pointer;
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.uncompleted {
+  color: black;
+}
+
+/* Edit and Delete Buttons */
+button.edit,
+button.delete {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.edit {
+  background: #FFC107;
+  margin-right: 10px;
+}
+
+button.edit:hover {
+  background: #e0a800;
+}
+
+button.delete {
+  background: #FF4D4D;
+}
+
+button.delete:hover {
+  background: #c82333;
+}
+
+/* Task Item Styling */
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task-item.high {
+  background-color: #ffc7c7; /* High priority: Light Red */
+}
+
+.task-item.medium {
+  background-color: #ffe5c7; /* Medium priority: Light Orange */
+}
+
+.task-item.low {
+  background-color: #c7ffd9; /* Low priority: Light Green */
+}
+
+/* Priority Dropdown */
+.priority-dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .search-input,
+  .filter-dropdown,
+  .sort-dropdown {
+    width: 100%;
+  }
+}
+
+/* Due Date and Category Styling */
+.due-date-input,
+.category-dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Category Backgrounds */
+.task-item.general {
+  background-color: #f0f0f0;
+}
+
+.task-item.work {
+  background-color: #e6f7ff;
+}
+
+.task-item.personal {
+  background-color: #fff0f6;
+}
+
+.task-item.study {
+  background-color: #f9fbe7;
+}
+
+/* Filters Section */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-dropdown,
+.sort-dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="datetime-local"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Transition Effect for Hover */
+button, input, select {
+  transition: all 0.3s ease;
+}
+
+/* General Container */
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Style */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  animation: slideDown 0.8s ease-out;
+}
+
+/* Form Style */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  animation: growWidth 0.5s ease-in-out;
+}
+
+/* Add Task Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+/* No Tasks Available */
+.no-tasks {
+  text-align: center;
+  color: #888;
+  animation: bounce 1.5s infinite;
+}
+
+/* Task List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #F4F4F4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Edit Task Input */
+input.edit-task {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: growWidth 0.5s ease-in-out;
+}
+
+/* Save Button */
+button.save {
+  padding: 5px 10px;
+  background: #28A745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button.save:hover {
+  background: #1e7e34;
+  transform: scale(1.1);
+}
+
+/* Delete Button */
+button.delete {
+  padding: 5px 10px;
+  background: #FF4D4D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button.delete:hover {
+  background: #e63939;
+  transform: scale(1.1);
+}
+
+/* Priority Animations */
+.task-item.high {
+  background-color: #ffc7c7; /* High priority: Light Red */
+  animation: shake 0.8s ease-in-out;
+}
+
+.task-item.medium {
+  background-color: #ffe5c7; /* Medium priority: Light Orange */
+}
+
+.task-item.low {
+  background-color: #c7ffd9; /* Low priority: Light Green */
+}
+
+/* General Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
