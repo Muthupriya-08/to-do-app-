@@ -46,12 +46,21 @@ pgsql
 Copy
 Edit
 todo-app/
+
 ├── client/
+
 │   ├── public/
+
 │   ├── src/
+
+
+
 ├── server/
+
 │   ├── models/
+
 │   ├── routes/
+
 │   ├── app.js
 
 
