@@ -37,9 +37,9 @@ pgsql
 Copy
 Edit
 todo-app/
-├── index.html
-├── styles.css
-├── script.js
+   ├── index.html
+   ├── styles.css
+   ├── script.js
 Or for MERN:
 
 pgsql
@@ -49,19 +49,18 @@ todo-app/
 
 ├── client/
 
-│   ├── public/
+   ├── public/
 
-│   ├── src/
-
+   ├── src/
 
 
 ├── server/
 
-│   ├── models/
+   ├── models/
 
-│   ├── routes/
+   ├── routes/
 
-│   ├── app.js
+   ├── app.js
 
 
 “The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks — and starting on the first one.”
